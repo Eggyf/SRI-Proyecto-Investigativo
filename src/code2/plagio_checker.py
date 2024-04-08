@@ -32,3 +32,19 @@ def compare_docs(v_doc1, v_doc2):
     """
     s = v_similarity(v_doc1, v_doc2)
     return s
+
+
+def find_n_grams(doc1, doc2, n):
+    """
+    Encuentra n-gramas comunes entre dos documentos.
+
+    Parámetros:
+    doc1 (str): El primer documento.
+    doc2 (str): El segundo documento.
+    n (int): El tamaño de los n-gramas.
+
+    Retorna:
+    set: Un conjunto de n-gramas comunes entre los dos documentos.
+    """
+    common_ngrams = find_similar_ngrams(doc1, doc2, n)
+    return common_ngrams

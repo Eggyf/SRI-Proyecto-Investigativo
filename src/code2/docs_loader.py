@@ -7,6 +7,51 @@ from gensim.models import Word2Vec
 import spacy
 
 
+def get_ngrams(text, n):
+    """
+    Genera n-gramas de un texto dado.
+
+    Parámetros:
+    text (str): El texto del cual se generarán los n-gramas.
+    n (int): El tamaño de los n-gramas.
+
+    Retorna:
+    list: Una lista de n-gramas.
+    """
+    # Divide el texto en tokens
+    tokens = text.split()
+
+    # Genera los n-gramas
+    ngrams_list = list(ngrams(tokens, n))
+
+    return [" ".join(gram) for gram in ngrams_list]
+
+
+def find_similar_ngrams(document1, document2, n=10):
+    """
+    Encuentra n-gramas similares entre dos documentos.
+
+    Parámetros:
+    document1 (str): El primer documento.
+    document2 (str): El segundo documento.
+    n (int): El tamaño de los n-gramas (por defecto es 10).
+
+    Retorna:
+    set: Un conjunto de n-gramas comunes entre los dos documentos.
+    """
+    # Obtiene los n-gramas de ambos documentos
+    ngrams_doc1 = get_ngrams(document1, n)
+    ngrams_doc2 = get_ngrams(document2, n)
+
+    set1 = set(ngrams_doc1)
+    set2 = set(ngrams_doc2)
+
+    # Encuentra los n-gramas comunes
+    common_ngrams = set1 & set2
+
+    return common_ngrams
+
+
 def load_docs(lower=False):
     """
     Carga documentos de una carpeta llamada 'data' en el directorio actual.
@@ -176,6 +221,8 @@ def v_similarity(v1, v2):
     Retorna:
     float: La similitud de coseno entre los dos vectores.
     """
+
+    print(v1)
     len_diff = len(v2) - len(v1)
     if len_diff > 0:
         v1.extend([0] * len_diff)
