@@ -26,7 +26,7 @@ Para resolver este problema nos basaremos en la similitud coseno entre dos vecto
 
 ### Ejecutar el proyecto
 
-- Instalar python y las librerias correspondientes y ejecutar el archivo start.py
+- Instalar python y las librerias correspondientes y ejecutar el archivo start.py que se encuentra en la carpeta code2
 
 ### Explicación de la solucion
 

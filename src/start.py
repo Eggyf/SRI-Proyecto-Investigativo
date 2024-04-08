@@ -1,5 +1,5 @@
-from code2 import docs_loader as dl
-from code2 import plagio_checker as pc
+from code3 import docs_loader as dl
+from code3 import plagio_checker as pc
 from gui import view as v
 import tkinter as tk
 from tkinter import messagebox

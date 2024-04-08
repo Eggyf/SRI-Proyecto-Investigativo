@@ -1,4 +1,4 @@
-from code2.docs_loader import *
+from code3.docs_loader import *
 
 
 def process_docs():
