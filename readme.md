@@ -34,5 +34,5 @@ Utilizamos varias librerias que nos ayudan en esta tarea. Cargamos los documento
 
 ### Insufuciencias de la solución
 
-Esta forma de abordar el problema no es la más óptima, existen otras como el modelo de n-gramas que cumplen mejor con la tarea, ya que dividimos los documentos en n-gramas del tamaño que queramos y vamos verificando si esos n-gramas se encuentran en ambos textos. Nuestra solución no tiene en cuenta el significado de las palabras en el texto esto lo hace ineficiente. 
+Esta forma de abordar el problema no es la más óptima, existen otras como el modelo de n-gramas que cumplen mejor con la tarea, ya que dividimos los documentos en n-gramas del tamaño que queramos y vamos verificando si esos n-gramas se encuentran en ambos textos. Nuestra solución no tiene en cuenta el significado de las palabras en el texto esto lo hace ineficiente.
 
