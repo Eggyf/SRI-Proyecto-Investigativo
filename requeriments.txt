@@ -1,0 +1,6 @@
+- Spacy
+- Sckikit-learn
+- Python
+- Numpy
+- Gensim
+- Nltk
