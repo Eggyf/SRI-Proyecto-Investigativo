@@ -30,7 +30,7 @@ Para resolver este problema nos basaremos en la similitud coseno entre dos vecto
 
 ### Explicación de la solucion
 
-Utilizamos varias librerias que nos ayudan en esta tarea. Cargamos los documentos y con Spacy le aplicamos la tokenizacion y la eliminacion de stopwords para quedarnos con lo esencial para verificar el plagio. Luego con el modelo Word2Vec de gensim llevamos los tokens de los documentos a vectores y le aplicamos la similitud coseno para cuan parecido es un texto con otro
+Utilizamos varias librerias que nos ayudan en esta tarea. Cargamos los documentos y con Spacy le aplicamos la tokenizacion y la eliminacion de stopwords para quedarnos con lo esencial para verificar el plagio. Luego con el modelo Word2Vec de gensim llevamos los tokens de los documentos a vectores y le aplicamos la similitud coseno para ver cuán parecido es un texto con otro
 
 ### Insufuciencias de la solución
 
